@@ -27,7 +27,7 @@ This is where the SysWhisper projet will be useful to us. With syswhisper you ar
 SysWhisper gives us all the syscall that we need for any type of os, with that we are able to make direct syscall as if they were normal Native API functions.
 We do not need to pass thought the ntdll.dll, a therefore to pass under the radar of AV/EDR.
 
-#### Let's take an example :
+### Let's take an example :
  
  
  
