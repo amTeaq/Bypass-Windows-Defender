@@ -34,7 +34,7 @@ If we want to use the NT system call CreateFile, we should call the NtCreateFile
 ![image](https://user-images.githubusercontent.com/76106120/151571082-cb09f257-e154-4329-9f3f-13b1e06cc1ca.png)
 
  
-The AV/EDR product could not hook the API because we are not using API calls because we call it's syscall directly. 
-So the AV/EDR cannot intercept our attemps and we would have opened it succesfully.
+The AV/EDR product could not hook the API because we are not using API calls, we are using direct syscall.
+So the AV/EDR cannot intercept our attemps and we would have opened it succesfully 🙂
  
 
