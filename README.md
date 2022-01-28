@@ -14,7 +14,7 @@ Application are isolated from critical memory section and system resources are r
 To make the translation between user mode and kernel mode there is an dll called ntddl.dll.
 Ntddl.dll gives the right Api call perform by the user mode, thanks to that the kernel can make the right system call.
 
-### In the image just below, you can see how the user mode and the kernel mode interract :
+#### In the image just below, you can see how the user mode and the kernel mode interract :
  
  ![image](https://user-images.githubusercontent.com/76106120/151557062-8362dc30-e1bf-495f-9dc9-0f046ea21b70.png)
 
