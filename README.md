@@ -16,7 +16,7 @@ Ntddl.dll gives the right Api call perform by the user mode, thanks to that the 
 
 #### In the image just below, you can see how the user mode and the kernel mode interract :
  
- ![image](https://user-images.githubusercontent.com/76106120/151557062-8362dc30-e1bf-495f-9dc9-0f046ea21b70.png)
+![image](https://user-images.githubusercontent.com/76106120/151559138-3b33e231-e4a8-4af7-a561-c34278648b02.png)
  
  
  The AV/EDR products knows that the sensitive spot is when the ntdll.dll give the syscall number to execute to the kernel mode.
