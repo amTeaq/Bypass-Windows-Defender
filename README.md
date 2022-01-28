@@ -35,7 +35,7 @@ If we want to use the NT system call CreateFile, we should call the NtCreateFile
 
  
 The AV/EDR product could not hook the API because we are not using API calls, we are using direct syscall.
-So the AV/EDR cannot intercept our attemps and we would have opened it succesfully 🙂
+So the AV/EDR cannot intercept our attemps and we would have opened the succesfully 🙂
 
 ### Process Hollowing
 
@@ -50,6 +50,7 @@ How it's working:
 
 3) Then Write the shellcode to the EntryPoint and resume the thread execution.
 
+for futher details check (https://github.com/snovvcrash/NimHollow)
  
 ## Shhhloader project (https://github.com/icyguider/Shhhloader):
 
