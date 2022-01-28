@@ -28,6 +28,9 @@ SysWhisper gives us all the syscall that we need for any type of os, with that w
 We do not need to pass thought the ntdll.dll, a therefore to pass under the radar of AV/EDR.
 
 ### Let's take an example :
+
+If we want to use the NT system call CreateFile, we should call the NtCreateFile located in the ntdll.dll. But instead of this we are directly invoking SysNtCreateFile  
+
  
  
  
