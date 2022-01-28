@@ -29,7 +29,10 @@ We do not need to pass thought the ntdll.dll, a therefore to pass under the rada
 
 ### Let's take an example :
 
-If we want to use the NT system call CreateFile, we should call the NtCreateFile located in the ntdll.dll. But instead of this we are directly invoking SysNtCreateFile  
+If we want to use the NT system call CreateFile, we should call the NtCreateFile located in the ntdll.dll. But instead of this we are directly invoking SysNtCreateFile.
+
+![image](https://user-images.githubusercontent.com/76106120/151569973-8f7591dd-354a-4e4c-90c5-41639b84e87c.png)
+
 
  
  
