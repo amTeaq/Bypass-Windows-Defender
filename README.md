@@ -16,6 +16,5 @@ Ntddl.dll gives the right Api call perform by the user mode, thanks to that the 
 
 Overview of how the 
  
+ ![image](https://user-images.githubusercontent.com/76106120/151557062-8362dc30-e1bf-495f-9dc9-0f046ea21b70.png)
 
-
-![image](https://user-images.githubusercontent.com/76106120/151556961-ef4af4c9-af8e-4be2-b313-c9fdb722a423.png)
