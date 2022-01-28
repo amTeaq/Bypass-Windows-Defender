@@ -26,7 +26,8 @@ To bypass this, it is possible to make direct system call. We can execute system
 This is where the SysWhisper projet will be useful to us. With syswhisper you are able to generate file Syscall.h who contain all the syscall of each windows operating system.
 SysWhisper gives us all the syscall that we need for any type of os, with that we are able to make direct syscall as if they were normal Native API functions.
 We do not need to pass thought the ntdll.dll, a therefore to pass under the radar of AV/EDR.
- 
+
+####Let's take an example :
  
  
  
