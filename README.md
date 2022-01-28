@@ -31,7 +31,7 @@ We do not need to pass thought the ntdll.dll, a therefore to pass under the rada
 
 If we want to use the NT system call CreateFile, we should call the NtCreateFile located in the ntdll.dll. But instead of this we are directly invoking SysNtCreateFile.
 
-![image](https://user-images.githubusercontent.com/76106120/151569973-8f7591dd-354a-4e4c-90c5-41639b84e87c.png)
+![image](https://user-images.githubusercontent.com/76106120/151571082-cb09f257-e154-4329-9f3f-13b1e06cc1ca.png)
 
  
 The AV/EDR product could not hook the API because we are not using API calls because we call it's syscall directly. 
