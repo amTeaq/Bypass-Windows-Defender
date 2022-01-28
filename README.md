@@ -19,7 +19,14 @@ Ntddl.dll gives the right Api call perform by the user mode, thanks to that the 
 ![image](https://user-images.githubusercontent.com/76106120/151559138-3b33e231-e4a8-4af7-a561-c34278648b02.png)
  
  
- The AV/EDR products knows that the sensitive spot is when the ntdll.dll give the syscall number to execute to the kernel mode.
+The AV/EDR products knows that the sensitive spot is when the ntdll.dll give the syscall number to execute to the kernel mode.
+If an AV/EDR recognize strange syscall, they will hook the API.
+ 
+To bypass this, it is possible to make direct system call. We can execute system call without using the ntdll.dll.
+This is where the SysWhisper projet will be useful to us. With syswhisper you are able to generate file Syscall.h who contain all the syscall of each windows operating system.
+With this file we are able to make direct syscall, we do not need to pass thought the ntdll.dll, a therefore to pass under the radar of AV/EDR.
+ 
+ 
  
  
 
