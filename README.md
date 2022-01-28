@@ -63,7 +63,7 @@ How it's working:
  - Start meterpreter listener and set payload to windows/x64/meterpreter/reverse_tcp (Shhhloader only support staged payload, so you have to provide it the right one !!!)
  - run the Notepod.exe
  
-![image](https://user-images.githubusercontent.com/76106120/151585465-b865ca49-7b58-4077-84a4-28c4b540e332.png)
+![image](https://user-images.githubusercontent.com/76106120/151585618-3b3790d7-e591-4c40-976e-5d8e6c5bfef4.png)
 
  
  
